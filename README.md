@@ -26,6 +26,8 @@ y realizando pruebas unitarias con **xUnit** para garantizar la calidad del cód
 Capacidad de trabajar bajo objetivos, aprender con rapidez y adaptarme a nuevas tecnologías. Tengo un alto nivel en inglés.
 Actualmente buscando mi primer trabajo como desarrollador de **Back-End** para seguir creciendo profesionalmente.
 
+📄 [Descargar mi CV](https://github.com/miguelsegura94/portfolio/blob/master/CV..pdf)
+
 
 ## Habilidades y herramientas
 
