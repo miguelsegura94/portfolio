@@ -45,11 +45,80 @@ Actualmente buscando mi primer trabajo como desarrollador de **Back-End** para s
 
 ## Proyectos
 
+## **Aplicación de Gestión de Capturas de Pesca (Front-End y Back-End)** 
+
+**Tecnologías:** `C#`, `Entity Framework Core`, `SQL Server`, `Radzen Blazor`, `xUnit`, `ADO.NET`, `Git`, `Postman`.
+
+**Descripción**  
+Aplicación de escritorio y web que permite gestionar capturas de pesca de forma completa, incluyendo usuarios, especies, tamaños y estilos de pesca. También permite realizar una búsqueda compleja en las captura que ya estan añadidas en la base de datos. Además de realizar el login/registro de usuarios. El proyecto incluye un **Back-End** en C# con API REST y un **Front-End** en Radzen Blazor, consumiendo la API para mostrar, añadir, editar y eliminar capturas de forma dinámica.
+
+**Funciones implementadas**
+- Gestión de capturas por usuarios, incluyendo alta, edición y eliminación.
+- **Login seguro con contraseñas encriptadas** para cada usuario.
+- **Búsqueda dinámica de capturas**, permitiendo filtrar rápidamente por cualquier atributo.
+- Posibilidad de **añadir imágenes a las capturas** para un registro más visual.
+- Validaciones de campos y tipos de datos antes de insertar registros en la base de datos.  
+- Control de claves primarias y foráneas para mantener la integridad de la información.  
+- Aplicación de los principios **SOLID** en la arquitectura del backend.
+
+**Ejemplo de código (C#)**
+```csharp
+public async Task<Gestion> AñadirCapturaObligatorio(CapturaInsertObligatorio modeloCaptura)
+{
+    Gestion gestion = new Gestion();
+    Captura captura = new Captura();
+    try
+    {
+        bool usuarioExiste = _context.Usuarios.Any(u => u.Id == modeloCaptura.UsuarioId);
+        if (!usuarioExiste)
+        {
+            gestion.setError("El usuario al que agregar la captura no existe.");
+            return gestion;
+        }
+        if (string.IsNullOrWhiteSpace(modeloCaptura.NombreEspecie) || string.IsNullOrEmpty(modeloCaptura.NombreEspecie))
+        {
+            gestion.setError("El nombre no puede estar vacío.");
+            return gestion;
+        }
+        if (!Enum.IsDefined(typeof(EstiloPesca), modeloCaptura.EstiloPesca))
+        {
+            gestion.setError("El estilo de pesca especificado no es válido.");
+            return gestion;
+        }
+        if (modeloCaptura.Tamaño < 0)
+        {
+            gestion.setError("El tamaño no puede ser inferior a 0.");
+            return gestion;
+        }
+        captura.UsuarioId = modeloCaptura.UsuarioId;
+        captura.NombreEspecie = modeloCaptura.NombreEspecie;
+        captura.Tamaño = modeloCaptura.Tamaño;
+        captura.EstiloPesca = modeloCaptura.EstiloPesca;
+        await _context.Capturas.AddAsync(captura);
+        await _context.SaveChangesAsync();
+        gestion.data = captura.CapturaId;
+        gestion.Correct("Captura añadida correctamente");
+    }
+    catch (Exception ex)
+    {
+        gestion.setError("Error de tipo {0}, mensaje: {1}", new List<dynamic>() { ex.GetType().Name, ex.Message });
+    }
+    return gestion;
+}
+// Este método agrega una nueva captura pasando los datos obligatorios.
+// Realiza varias validaciones: verifica que el usuario exista, que el nombre de la especie no esté vacío,
+// que el estilo de pesca sea válido y que el tamaño sea correcto.
+// Si todos los datos son correctos, guarda la captura en la base de datos usando Entity Framework Core
+// y devuelve en `gestion` el id de la captura y un mensaje de funcionamiento correcto.
+// En caso de error, devuelve en `gestion` el mensaje correspondiente.
+```
+**Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/AppPesca)
+
 ## **Gestión de base de datos en C# con SQL Server**  
 **Tecnologías:** `C#`, `SQL Server`, `ADO.NET`, `Postman`, `Git`.
 
 **Descripción**  
-Aplicación de escritorio que permite gestionar tablas, columnas y registros de forma genérica en una base de datos. Implementa operaciones CRUD genéricas conectadas a una base de datos local y aplica los principios SOLID.
+Aplicación de escritorio que permite gestionar tablas, columnas y registros de forma **genérica** en una base de datos. Implementa operaciones **CRUD** genéricas conectadas a una base de datos local y aplica los principios **SOLID**.
 
 **Funciones implementadas**
 - Inserción segura de registros con validaciones previas y por parámetros.
@@ -76,9 +145,7 @@ if (!ExisteTabla(tablaBuscar, connectionString))
 **Tecnologías:** `C#`, `Git`, `Programación Orientada a Objetos (POO)`, `Consola de Windows`. 
 
 **Descripción**  
-Aplicación de consola que simula un combate por turnos entre dos jugadores al estilo Pokémon. 
-Cada jugador dispone de un equipo de 3 Pokémon. 
-El juego permite elegir habilidades, aplicar daño, usar curación, y manejar la lógica completa del combate hasta que uno de los jugadores gane.
+Aplicación de consola que simula un combate por turnos entre dos jugadores al estilo Pokémon. Cada jugador dispone de un equipo de 3 Pokémon. El juego permite elegir habilidades, aplicar daño, usar curación, y manejar la lógica completa del combate hasta que uno de los jugadores gane. Lógica **reutilizable**.
 
 **Funciones implementadas**
 - Sistema de combate por turnos entre Jugador 1 y Jugador 2.
@@ -113,7 +180,7 @@ if (Debilitado(PokemonQueDefiende))
 **Tecnologías:** `C#`, `Listas genéricas`, `lógica de negocio`, `consola`.  
 
 **Descripción**  
-Aplicación de consola que simula una máquina expendedora con productos y monedas. Permite ingresar dinero, seleccionar productos, mostrar saldo, añadir y eliminar productos dinámicamente y calcular cambio.
+Aplicación de consola que simula una máquina expendedora con productos y monedas. Permite ingresar dinero, seleccionar productos, mostrar saldo, añadir y eliminar productos **dinámicamente** y calcular cambio.
 
 **Funciones implementadas**
 - Gestión de productos con identificador, nombre y coste.
