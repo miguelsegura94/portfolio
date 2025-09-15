@@ -3,16 +3,17 @@
 Desarrollador back-End buscando el primer trabajo como junior.
 
 
-#### Contacto
-```typescript
- {
-  email: "miguel.a.segura.94@gmail.com",
-  linkedin: "https://www.linkedin.com/in/miguel-angel-segura-perez-78b537364/",
-  github: "https://github.com/miguelsegura94",
-}
-```
+## Contacto
 
-#### Sobre mi
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miguel-angel-segura-perez-78b537364/)  
+[![GitHub](https://img.shields.io/badge/GitHub-Perfil-black?style=for-the-badge&logo=github)](https://github.com/miguelsegura94) 
+
+**Mail:** `miguel.a.segura.94@gmail.com`
+
+
+
+
+## Sobre mi
 ```typescript
 "Desarrollador Back-End con conocimientos en SQL server management, APIs, control de versiones con Git y GitHub,"
 "y realizando pruebas unitarias con xUnit para garantizar la calidad del código. Capacidad de trabajar bajo objetivos,"
@@ -20,12 +21,12 @@ Desarrollador back-End buscando el primer trabajo como junior.
 "Actualmente buscando mi primer trabajo como desarrollador de back-end para seguir creciendo profesionalmente."
 ```
 
-#### Habilidades y herramientas
+## Habilidades y herramientas
 ```typescript
 Habilidades: ["C#", "SQL", "Entity Framework", "Radzen", "xUnit", "Ado.Net", "SOLID", "ASP.NET Core Web API"]
 Herramientas: ["Git", "Visual Studio", "Postman", "Blazor","SQL Server Management Studio (SSMS)"]
 ```
-#### Proyectos
+## Proyectos
 
 ## **Gestión de base de datos en C# con SQL Server**  
 **Tecnologías:** `C#`, `SQL Server`, `ADO.NET`, `Postman`, `Git`.
