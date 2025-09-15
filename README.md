@@ -5,7 +5,7 @@ Desarrollador back-End buscando el primer trabajo como junior.
 
 ## Contacto
 ```text
-miguel.a.segura.94@gmail.com
+✉️miguel.a.segura.94@gmail.com
 ```
 [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28" alt="LinkedIn"/>](https://www.linkedin.com/in/miguel-angel-segura-perez-78b537364/)
 [![LinkedIn](https://img.shields.io/badge/Perfil-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miguel-angel-segura-perez-78b537364/)  
@@ -114,6 +114,8 @@ public async Task<Gestion> AñadirCapturaObligatorio(CapturaInsertObligatorio mo
 ```
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/AppPesca)
 
+---
+
 ## **Gestión de base de datos en C# con SQL Server**  
 **Tecnologías:** `C#`, `SQL Server`, `ADO.NET`, `Postman`, `Git`.
 
@@ -140,6 +142,8 @@ if (!ExisteTabla(tablaBuscar, connectionString))
 // asegurando que no haya errores de SQL por referencias inexistentes
 ```
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/API)
+
+---
 
 ## **Pokemon en aplicación de consola**  
 **Tecnologías:** `C#`, `Git`, `Programación Orientada a Objetos (POO)`, `Consola de Windows`. 
@@ -175,6 +179,8 @@ if (Debilitado(PokemonQueDefiende))
 //cómo se actualiza su estado, y cómo se gestiona el flujo de combate tras una derrota.
 ```
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94//pokemon-con-jugador1yjugador2)
+
+---
 
 ## **Máquina expendedora**  
 **Tecnologías:** `C#`, `Listas genéricas`, `lógica de negocio`, `consola`.  
@@ -233,6 +239,8 @@ public void ComprarProducto()
 ```
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94//M-quina-expendedora)
 
+---
+
 ## **3 en raya en consola**  
 **Tecnologías:** `C#`, `Programación estructurada`, `Lógica en consola`.
 
@@ -264,6 +272,8 @@ else
 // y llama a la función para comprobar si el jugador actual ha ganado.
 ```
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/3-en-raya)
+
+---
 
 
 
