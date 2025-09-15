@@ -54,32 +54,42 @@ if (!ExisteTabla(tablaBuscar, connectionString))
 ```
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/API)
 
-## **Gestión de base de datos en C# con SQL Server**  
-**Tecnologías:** `C#`, `SQL Server`, `ADO.NET`, `Postman`, `Git`  
+## **Pokemon en aplicación de consola**  
+**Tecnologías:** `C#`, `Git`, `Programación Orientada a Objetos (POO)`, `Consola de Windows`. 
 
 **Descripción**  
-Aplicación de escritorio que permite gestionar tablas, columnas y registros de forma genérica en una base de datos. Implementa operaciones CRUD genéricas conectadas a una base de datos local y aplica los principios SOLID.
+Aplicación de consola que simula un combate por turnos entre dos jugadores al estilo Pokémon. 
+Cada jugador dispone de un equipo de 3 Pokémon. 
+El juego permite elegir habilidades, aplicar daño, usar curación, y manejar la lógica completa del combate hasta que uno de los jugadores gane.
 
 **Funciones implementadas**
-- Inserción segura de registros con validaciones previas y por parámetros.
-- Detección de claves primarias duplicadas.
-- Verificación de claves foráneas antes del insert.
-- Verificación del tipo de dato a implementar en la columna.
-- Control de columnas autoincrementales y nulas.
-- Comprobación si los caracteres son válidos.
-- Documentación completa y detallada de todos los métodos.
+- Sistema de combate por turnos entre Jugador 1 y Jugador 2.
+- Cada Pokémon cuenta con una lista de habilidades (daño o curación).
+- Gestión de cálculo de daño según estadísticas.
+- Control de salud, debilitamiento y cambio automático de Pokémon al ser derrotado.
+- Verificación de habilidades seleccionadas y control de turnos.
+- Soporte para habilidades de autoeliminación (por ejemplo, Id = 5 representa autodaño).
+- Lógica clara y reutilizable basada en principios de buenas prácticas de programación.
 
 **Ejemplo de código (C#)**
 ```csharp
-if (!ExisteTabla(tablaBuscar, connectionString))
+if (Debilitado(PokemonQueDefiende))
 {
-    gestion.setError($"Error: No existe la tabla {tablaBuscar}");
-    return gestion;
+    Console.Write($"{PokemonQueDefiende.Nombre} Debilitado.\n");
+    PokemonQueDefiende.Debilitado = true;
+    PokemonQueDefiende.Salud = 0;
+    if (jugadores[otroJugador].EquipoDebilitado())
+    {
+        jugadores[otroJugador].HaGanado = true;
+        Console.WriteLine($"Gana el {jugadores[especifico].Nombre}");
+        return;
+    }
+    CambiarDebilitado(PokemonQueDefiende, jugadores, otroJugador);
 }
-// Este método verifica que existe la tabla antes de realizar ninguna gestión con ella,
-// asegurando que no haya errores de SQL por referencias inexistentes
+//Este fragmento muestra cómo se comprueba si un Pokémon ha sido derrotado,
+//cómo se actualiza su estado, y cómo se gestiona el flujo de combate tras una derrota.
 ```
-**Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/API)
+**Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94//pokemon-con-jugador1yjugador2)
 
 #### Experience
 ```typescript
