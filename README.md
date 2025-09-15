@@ -1,6 +1,10 @@
 # Miguel Angel Segura Perez
 
 Desarrollador back-End buscando el primer trabajo como junior.
+## Índice
+- [Sobre mí](#sobre-mí)
+- [Habilidades y herramientas](#habilidades-y-herramientas)
+- [Proyectos](#proyectos)
 
 
 ## Contacto
@@ -108,7 +112,7 @@ public async Task<Gestion> AñadirCapturaObligatorio(CapturaInsertObligatorio mo
 // Este método agrega una nueva captura pasando los datos obligatorios.
 // Realiza varias validaciones: verifica que el usuario exista, que el nombre de la especie no esté vacío,
 // que el estilo de pesca sea válido y que el tamaño sea correcto.
-// Si todos los datos son correctos, guarda la captura en la base de datos usando Entity Framework Core
+// Si pasa todas las validaciones, guarda la captura en la base de datos usando Entity Framework Core
 // y devuelve en `gestion` el id de la captura y un mensaje de funcionamiento correcto.
 // En caso de error, devuelve en `gestion` el mensaje correspondiente.
 ```
