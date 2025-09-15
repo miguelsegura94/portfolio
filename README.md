@@ -55,61 +55,31 @@ if (!ExisteTabla(tablaBuscar, connectionString))
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/API)
 
 ## **Gestión de base de datos en C# con SQL Server**  
-#### Proyectos
-```typescript
-Proyectos: [
-  {
-    Nombre: "Gestión de base de datos en C# con SQL server",
-    Tecnologías: ["C#", "SQL Server", "ADO.NET", "Postman", "Git"],
-    Descripción: "Aplicación de escritorio que permite gestionar tablas,"
-    "columnas y registros de forma genérica en una base de datos."
-    "Implementa operaciones CRUD genéricas conectadas a una base de datos local. Utilización de los principios SOLID.",
-    Funciones: [
-      "Inserción segura de registros con validaciones previas y por parámetros.",
-      "Detección de claves primarias duplicadas.",
-      "Verificación de claves foráneas antes del insert.",
-      "Verificación del tipo de dato a implementar en la columna.",
-      "Control de columnas autoincrementales y nulas.",
-      "Comprobación si los caracteres son válidos.",
-      "Documentación completa y detallada de todos los métodos."
-    ],
-     EjemploCodigo: `
-        if (!ExisteTabla(tablaBuscar, connectionString))
-        {
-            gestion.setError($"Error: No existe la tabla {tablaBuscar}");
-            return gestion;
-        }
-    // Este método verifica que existe la tabla antes de realizar ninguna gestión con ella,
-    // asegurando que no haya errores de SQL por referencias inexistentes.
-    `,
-    Link: "https://github.com/miguelsegura94/API"
-  },
-  {
-    name: "Gestión de base de datos en C# con SQL server",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  },
-  {
-    name: "Gestión de base de datos en C# con SQL server",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  },
-  {
-    name: "Gestión de base de datos en C# con SQL server",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  },
-  {
-    name: "Gestión de base de datos en C# con SQL server",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  }
-]
+**Tecnologías:** `C#`, `SQL Server`, `ADO.NET`, `Postman`, `Git`  
+
+**Descripción**  
+Aplicación de escritorio que permite gestionar tablas, columnas y registros de forma genérica en una base de datos. Implementa operaciones CRUD genéricas conectadas a una base de datos local y aplica los principios SOLID.
+
+**Funciones implementadas**
+- Inserción segura de registros con validaciones previas y por parámetros.
+- Detección de claves primarias duplicadas.
+- Verificación de claves foráneas antes del insert.
+- Verificación del tipo de dato a implementar en la columna.
+- Control de columnas autoincrementales y nulas.
+- Comprobación si los caracteres son válidos.
+- Documentación completa y detallada de todos los métodos.
+
+**Ejemplo de código (C#)**
+```csharp
+if (!ExisteTabla(tablaBuscar, connectionString))
+{
+    gestion.setError($"Error: No existe la tabla {tablaBuscar}");
+    return gestion;
+}
+// Este método verifica que existe la tabla antes de realizar ninguna gestión con ella,
+// asegurando que no haya errores de SQL por referencias inexistentes
 ```
+**Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/API)
 
 #### Experience
 ```typescript
