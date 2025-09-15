@@ -4,28 +4,45 @@ Desarrollador back-End buscando el primer trabajo como junior.
 
 
 ## Contacto
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miguel-angel-segura-perez-78b537364/)  
-[![GitHub](https://img.shields.io/badge/GitHub-Perfil-black?style=for-the-badge&logo=github)](https://github.com/miguelsegura94) 
-
-**Mail:** `miguel.a.segura.94@gmail.com`
-
-
-
-
-## Sobre mi
-```typescript
-"Desarrollador Back-End con conocimientos en SQL server management, APIs, control de versiones con Git y GitHub,"
-"y realizando pruebas unitarias con xUnit para garantizar la calidad del código. Capacidad de trabajar bajo objetivos,"
-"aprender con rapidez y adaptarme a nuevas tecnologías. Tengo un alto nivel en inglés."
-"Actualmente buscando mi primer trabajo como desarrollador de back-end para seguir creciendo profesionalmente."
+```text
+miguel.a.segura.94@gmail.com
 ```
+[<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28" alt="LinkedIn"/>](https://www.linkedin.com/in/miguel-angel-segura-perez-78b537364/)
+[![LinkedIn](https://img.shields.io/badge/Perfil-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miguel-angel-segura-perez-78b537364/)  
+[<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="28" alt="GitHub"/>](https://github.com/miguelsegura94)
+[![GitHub](https://img.shields.io/badge/Perfil-black?style=for-the-badge)](https://github.com/miguelsegura94) 
+
+
+
+## Sobre mí
+
+Desarrollador **Back-End** con conocimientos en **SQL Server Management**, **APIs**, control de versiones con **Git** y **GitHub**,  
+y realizando pruebas unitarias con **xUnit** para garantizar la calidad del código. También tengo experiencia en **Radzen Blazor** para crear interfaces y consumir APIs de manera eficiente.  
+
+Capacidad de trabajar bajo objetivos, aprender con rapidez y adaptarme a nuevas tecnologías. Tengo un alto nivel en inglés.
+Actualmente buscando mi primer trabajo como desarrollador de **Back-End** para seguir creciendo profesionalmente.
+
 
 ## Habilidades y herramientas
-```typescript
-Habilidades: ["C#", "SQL", "Entity Framework", "Radzen", "xUnit", "Ado.Net", "SOLID", "ASP.NET Core Web API"]
-Herramientas: ["Git", "Visual Studio", "Postman", "Blazor","SQL Server Management Studio (SSMS)"]
-```
+
+**Habilidades:**  
+`C#`, `SQL`, `Entity Framework`, `Radzen Blazor`, `xUnit`, `ADO.NET`, `SOLID`, `ASP.NET Core Web API`  
+
+**Principales Skills:**  
+![C#](https://img.shields.io/badge/C%23-32325D?style=for-the-badge)
+![SQL](https://img.shields.io/badge/SQL-00758F?style=for-the-badge)
+![Radzen Blazor](https://img.shields.io/badge/Radzen-Blazor-blue?style=for-the-badge)
+![xUnit](https://img.shields.io/badge/xUnit-FA5C5C?style=for-the-badge)
+
+**Herramientas:**  
+`Git`, `Visual Studio`, `Postman`, `Blazor`, `SQL Server Management Studio (SSMS)`  
+
+**Herramientas destacadas:**  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge)
+![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge)
+
+
 ## Proyectos
 
 ## **Gestión de base de datos en C# con SQL Server**  
