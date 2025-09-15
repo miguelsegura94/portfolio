@@ -41,7 +41,7 @@ Actualmente buscando mi primer trabajo como desarrollador de **Back-End** para s
 ![xUnit](https://img.shields.io/badge/xUnit-FA5C5C?style=for-the-badge)
 
 **Herramientas:**  
-`Git`, `Visual Studio`, `Postman`, `Blazor`, `SQL Server Management Studio (SSMS)`  
+`Git`, `Visual Studio`, `Postman`, `Blazor`, `SQL Server Management Studio (SSMS)`, `Swagger`, `Radzen Blazor Studio` 
 
 **Herramientas destacadas:**  
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge)
