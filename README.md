@@ -148,32 +148,37 @@ public void ComprarProducto()
 ```
 **Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94//M-quina-expendedora)
 
-## **Gestión de base de datos en C# con SQL Server**  
-**Tecnologías:** `C#`, `SQL Server`, `ADO.NET`, `Postman`, `Git`.
+## **3 en raya en consola**  
+**Tecnologías:** `C#`, `Programación estructurada`, `Lógica en consola`.
 
 **Descripción**  
-Aplicación de escritorio que permite gestionar tablas, columnas y registros de forma genérica en una base de datos. Implementa operaciones CRUD genéricas conectadas a una base de datos local y aplica los principios SOLID.
+Aplicación de consola que permite jugar una partida completa de 3 en raya entre dos jugadores. La lógica está programada para validar cada movimiento, mostrar el estado actual del tablero, y detectar automáticamente al ganador.
 
 **Funciones implementadas**
-- Inserción segura de registros con validaciones previas y por parámetros.
-- Detección de claves primarias duplicadas.
-- Verificación de claves foráneas antes del insert.
-- Verificación del tipo de dato a implementar en la columna.
-- Control de columnas autoincrementales y nulas.
-- Comprobación si los caracteres son válidos.
-- Documentación completa y detallada de todos los métodos.
+- Tablero de juego representado con una matriz 3x3.
+- Interfaz de consola para que ambos jugadores ingresen sus movimientos.
+- Validación de coordenadas válidas y de que la casilla no esté ocupada.
+- Detección automática del ganador (en filas, columnas o diagonales).
+ -Finalización inmediata de la partida al detectar victoria.
+- Visualización del tablero tras cada turno.
 
 **Ejemplo de código (C#)**
 ```csharp
-if (!ExisteTabla(tablaBuscar, connectionString))
+if (matriz[filaX, columnaX] == 'X' || matriz[filaX, columnaX] == 'O')
 {
-    gestion.setError($"Error: No existe la tabla {tablaBuscar}");
-    return gestion;
+    Console.Write("La posición está ocupada\n");
+    fichaXValido = false;
 }
-// Este método verifica que existe la tabla antes de realizar ninguna gestión con ella,
-// asegurando que no haya errores de SQL por referencias inexistentes
+else
+{
+    matriz[filaX, columnaX] = 'X';
+    fichaXValido = true;
+    VerificarGanador('X');
+}
+// Este bloque asegura que no se pueda sobreescribir una celda ocupada,
+// y llama a la función para comprobar si el jugador actual ha ganado.
 ```
-**Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/API)
+**Enlace al proyecto:** [Ver en GitHub](https://github.com/miguelsegura94/3-en-raya)
 
 #### Experience
 ```typescript
