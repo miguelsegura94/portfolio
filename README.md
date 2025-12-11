@@ -1,6 +1,6 @@
 # Miguel Angel Segura Perez
 
-Desarrollador back-End buscando el primer trabajo como junior.
+Desarrollador back-End buscando trabajo como junior.
 ## Índice
 - [Sobre mí](#sobre-mí)
 - [Habilidades y herramientas](#habilidades-y-herramientas)
